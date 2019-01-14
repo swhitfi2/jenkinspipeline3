@@ -1,29 +1,20 @@
-pipeline 
-{
+pipeline {
     agent any
 
-    stapipelineges {
+    stages {
         stage('Build') {
             steps {
-                echo 'I am building step one'                
+                echo 'Building..'
             }
         }
         stage('Test') {
             steps {
-                
-                for i in {1..10}
-                    do
-                    
-                    echo $i
-                    done
-
-                
+                echo 'Testing..'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'We are deploying our code now'
-                
+                echo 'Deploying....'
             }
         }
     }
