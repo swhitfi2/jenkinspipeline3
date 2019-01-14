@@ -9,7 +9,13 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                
+                for i in {1..10}
+                    do
+                    
+                    echo $i
+                    done
+                
             }
         }
         stage('Deploy') {
