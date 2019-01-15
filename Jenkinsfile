@@ -9,11 +9,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                
-                
-
-                echo "This test will take 3 hours"
-                
+       
+                echo 'This test will take 3 hours'         
             }
         }
         stage('Deploy') {
