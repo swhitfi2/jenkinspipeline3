@@ -12,7 +12,7 @@ pipeline {
                 
                 hours=25
 
-                 echo "This test will take $hours hours"
+                sh "This test will take $hours hours"
                 
             }
         }
