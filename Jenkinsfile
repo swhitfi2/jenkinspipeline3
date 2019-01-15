@@ -10,9 +10,9 @@ pipeline {
         stage('Test') {
             steps {
                 
-                hours=25
+                
 
-                sh "This test will take $hours hours"
+                echo "This test will take 3 hours"
                 
             }
         }
